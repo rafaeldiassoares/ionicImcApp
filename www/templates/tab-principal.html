@@ -1,0 +1,52 @@
+<ion-view view-title="Principal">
+  <ion-content class="padding">
+
+     <div class="card">
+      <div class="item item-text-wrap">
+        Insira o seu <b>peso</b>, <b>altura</b> e <b>sexo</b> para realizar o calculo do seu Índice de Massa Corporal
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-100">
+        <div class="list">
+          <label class="item item-input">
+            <input type="number" placeholder="Altura" ng-model="valor.altura" ng-decimal>
+          </label>
+          <label class="item item-input">
+            <input type="number" placeholder="Peso" ng-model="valor.peso">
+          </label>
+        </div>
+      </div>  
+    </div>
+
+    <div class="row">
+      <div class="col col-100">
+        <div class="list">
+          <label class="item item-radio">
+            <input type="radio" name="sexo">
+            <div class="item-content icon ion-man" >
+              Masculino
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </label>
+
+          <label class="item item-radio">
+            <input type="radio" name="sexo">
+            <div class="item-content icon ion-woman" >
+              Feminino
+            </div>
+            <i class="radio-icon ion-checkmark"></i>
+          </label>
+        </div>  
+      </div>  
+    </div>  
+
+    <div class="row">
+      <button class="button button-block button-positive" ng-click="calcular(valor)">
+          CALCULAR
+      </button>
+    </div>
+
+  </ion-content>
+</ion-view>
