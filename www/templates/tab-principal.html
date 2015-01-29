@@ -1,5 +1,5 @@
 <ion-view view-title="Principal">
-  <ion-content class="padding">
+  <ion-content class="padding rf-scroll-content">
 
      <div class="card">
       <div class="item item-text-wrap">
@@ -11,10 +11,10 @@
       <div class="col col-100">
         <div class="list">
           <label class="item item-input">
-            <input type="number" placeholder="Altura" ng-model="valor.altura" ng-decimal>
+            <input type="text" placeholder="Altura" ng-model="valor.altura" maxlength="4">
           </label>
           <label class="item item-input">
-            <input type="number" placeholder="Peso" ng-model="valor.peso">
+            <input type="text" placeholder="Peso" ng-model="valor.peso" maxlength="3">
           </label>
         </div>
       </div>  

@@ -14,3 +14,11 @@
 .color-card-yellow {
 	background-color: #FCF4AB;
 }
+
+.rf-icon-title {
+    position: fixed;
+}
+
+.rf-scroll-content {
+    background-color: rgba(56,126,245, 0.3);
+}
